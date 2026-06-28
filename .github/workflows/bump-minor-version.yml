@@ -8,6 +8,7 @@ on:
 
 jobs:
   bump:
-    uses: kungfu-trader/workflows/.github/workflows/.bump-minor-version.yml@v1
+    if: ${{ github.event.pull_request.merged }}
+    uses: kungfu-systems/workflows/.github/workflows/.bump-minor-version.yml@v2.0-alpha
     secrets:
       GITHUB_PUSH_TOKEN: ${{ secrets.KUNGFU_GITHUB_TOKEN }}
