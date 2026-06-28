@@ -1,14 +1,13 @@
 {
   "name": "@kungfu-trader/action-release-note",
-  "version": "1.0.1",
+  "version": "1.0.2-alpha.48",
   "main": "dist/index.js",
-  "repository": "https://github.com/kungfu-trader/action-release-note",
+  "repository": "https://github.com/kungfu-systems/action-release-note",
   "author": "Kungfu Trader",
   "license": "Apache-2.0",
   "scripts": {
     "postinstall": "patch-package",
-    "build:esbuild": "esbuild index.js --bundle --minify --outfile=dist/index.js --platform=node",
-    "build": "ncc build index.js -o dist",
+    "build": "esbuild index.js --bundle --minify --outfile=dist/index.js --platform=node",
     "format": "prettier --write --parser typescript \"*.js\"",
     "lint": "eslint --ext .js ."
   },
@@ -19,8 +18,11 @@
     "@yarnpkg/lockfile": "^1.1.0",
     "axios": "^1.4.0",
     "glob": "^10.3.3",
+    "lodash.chunk": "^4.2.0",
+    "lodash.omit": "^4.5.0",
     "lodash.sortby": "^4.7.0",
-    "md-to-pdf": "^5.2.4"
+    "mustache": "^4.2.0",
+    "semver": "^7.5.4"
   },
   "devDependencies": {
     "@ls-lint/ls-lint": "^1.9.0",

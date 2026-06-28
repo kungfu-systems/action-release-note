@@ -9,6 +9,7 @@ on:
 
 jobs:
   bump:
-    uses: kungfu-trader/workflows/.github/workflows/.bump-major-version.yml@v1
+    if: ${{ github.event.inputs.confirm  == 'confirm' }}
+    uses: kungfu-systems/workflows/.github/workflows/.bump-major-version.yml@v2
     secrets:
       GITHUB_PUSH_TOKEN: ${{ secrets.KUNGFU_GITHUB_TOKEN }}
