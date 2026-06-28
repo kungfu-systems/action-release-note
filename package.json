@@ -2,7 +2,7 @@
   "name": "@kungfu-trader/action-release-note",
   "version": "1.0.2-alpha.48",
   "main": "dist/index.js",
-  "repository": "https://github.com/kungfu-trader/action-release-note",
+  "repository": "https://github.com/kungfu-systems/action-release-note",
   "author": "Kungfu Trader",
   "license": "Apache-2.0",
   "scripts": {
