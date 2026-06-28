@@ -6,14 +6,13 @@ const lib = require("./lib");
 const run = async () => {
   await lib.createReleaseNote(
     {
-      token: "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",
-      apiKey:
-        "patYccq9GQsQKzChm.b579787a1b088f8e9824caae3ef362ff303d0735f5c551989485fb6c98cb64ab",
+      token: "github-token-placeholder",
+      apiKey: "airtable-token-placeholder",
       bucketRelease: "kungfu-releases",
       bucketPrebuilt: "kungfu-prebuilt",
       baseId: "appAdi5zFFEsCzmEM",
       tableId: "tblJabUQUuS6ywW5Z",
-      owner: "kungfu-trader",
+      owner: "kungfu-systems",
       repo: "kungfu",
       pullRequestTitle: "Prerelease v2.6.14-alpha.4",
       pullRequestNumber: 3065,
