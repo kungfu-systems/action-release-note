@@ -16,6 +16,6 @@ const argv = require("yargs/yargs")(process.argv.slice(2))
   })
   .help().argv;
 
-// node cli.js --token token --owner kungfu-trader --repo test-rollback-packages --pullRequestNumber 88
+// node cli.js --token token --owner kungfu-systems --repo test-rollback-packages --pullRequestNumber 88
 lib.createReleaseNote(argv).catch(console.error);
 // lib.closeIssue(argv).catch(console.error);

@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   try:
-    uses: kungfu-systems/workflows/.github/workflows/.release-verify.yml@v2.0-alpha
+    uses: kungfu-systems/workflows/.github/workflows/.release-verify.yml@v2
     with:
       prebuild: false
       build-container-enabled: false
@@ -21,7 +21,7 @@ jobs:
       publish-versioning: false
       publish-aws-ci: false
       publish-aws-user: false
-      action-bump-version-ref: v4.0-alpha
+      action-bump-version-ref: v4
   
   verify:
     needs: try
